@@ -133,6 +133,13 @@ namespace MudBlazor
         [Category(CategoryTypes.TreeView.Behavior)]
         public RenderFragment Content { get; set; }
 
+        /// <summary>
+        /// Content of the item body, if used replaced the text, end text and end icon rendering.
+        /// </summary>
+        [Parameter]
+        [Category(CategoryTypes.TreeView.Behavior)]
+        public RenderFragment BodyContent { get; set; }
+
         [Parameter]
         [Category(CategoryTypes.TreeView.Data)]
         public HashSet<T> Items { get; set; }
